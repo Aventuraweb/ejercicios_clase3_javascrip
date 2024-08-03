@@ -60,3 +60,12 @@ class Persona {
     }
 
 }
+
+const persona = new Persona('Carlos');
+console.log(persona.obtenerNombre()); 
+
+persona.establecerNombre('Carlos');
+console.log(persona.obtenerNombre())
+
+const nuevaFechaNacimiento = persona.calcularFechaNacimiento();
+console.log(nuevaFechaNacimiento);
