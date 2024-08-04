@@ -27,3 +27,17 @@ class Empleado extends Trabajador {
     }
 }
 
+// Utiliza clases anónimas o lambdas para implementar la interfaz Trabajador de manera más concisa.
+
+const estudiantes = {
+    realizarTarea: () => {
+        console.log('Realizando tarea escolar');
+    }
+};
+
+const empleados = {
+    realizarTarea: () => {
+        console.log('Realizando tarea laboral');
+    }
+};
+
