@@ -68,3 +68,11 @@ class Persona {
 
 }
 
+// uso 
+const persona = new Persona('Carlos', 59, '1960-04-22');
+console.log(persona.obtenerNombre()); 
+console.log(persona.obtenerEdad())
+
+const nuevaFechaNacimiento = persona.calcularFechaNacimiento();
+console.log(nuevaFechaNacimiento);
+
