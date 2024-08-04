@@ -54,6 +54,15 @@ class Rectangulo extends FiguraGeometrica{
         this.#longitud = longitud; 
         this.#ancho = ancho; 
     }   
+
+    //Agrega métodos para calcular el área y el perímetro de las figuras geométricas
+    calcularArea(){
+        return this.#longitud * this.#ancho; 
+    }
+
+    calcularPerimetro(){
+        return 2 * (this.#longitud + this.#ancho); 
+    } 
       
 }
 
@@ -64,6 +73,15 @@ class Circulo extends FiguraGeometrica {
     constructor(nombre, color, radio){
         super(nombre, color); 
         this.#radio = radio;  
+    }
+
+    // Agrega métodos para calcular el área y el perímetro de las figuras geométricas
+    calcularArea(){
+        return Math.PI * Math.pow(this.#radio, 2);
+    }
+
+    calcularPerimetro(){
+        return 2 * Math.PI * this.#radio;
     }
 
 }
