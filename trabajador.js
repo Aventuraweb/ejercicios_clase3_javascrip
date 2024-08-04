@@ -7,3 +7,14 @@ class Trabajador {
     }
 }
 
+// Implementa la interfaz en las clases Estudiante y Empleado.
+
+class Estudiante extends Trabajador {
+   
+}
+
+
+class Empleado extends Trabajador {
+    
+}
+
