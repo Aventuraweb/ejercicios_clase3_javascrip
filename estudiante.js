@@ -6,6 +6,13 @@ class Estudiante extends Persona {
     // Agrega una propiedad adicional para el grado del estudiante
     #gradoEstudiante; 
 
+     // Utiliza constructores para inicializar las propiedades heredadas y propias de la clase Estudiante.
+
+     constructor(nombre, edad, fechaNacimiento, gradoEstudiante){
+        super(nombre, edad, fechaNacimiento); 
+        this.#gradoEstudiante = gradoEstudiante; 
+    }
+
     establecergradoEstudiante(gradoEstudiante){
         if ( gradoEstudiante == 'String' && gradoEstudiante.trim().length > 0){
             this.#gradoEstudiante = gradoEstudiante; 
@@ -18,12 +25,12 @@ class Estudiante extends Persona {
         return this.#gradoEstudiante; 
     }
 
-    //Sobrescribe el método toString() para incluir el grado del estudiante al describirlo.
+    // Sobrescribe el método toString() para incluir el grado del estudiante al describirlo.
     toString(){
         return `Nombre: ${this.obtenerNombre()}, Edad: ${this.obtenerEdad()}; Fecha de Nacimiento: ${this.obtenerFechaNacimiento()}; Grado del estudiante: ${this.obtenergradoEstudiante()}`; 
 
 }
 
-
+}
 
 
