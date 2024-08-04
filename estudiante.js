@@ -33,7 +33,7 @@ class Estudiante extends Persona {
 
 }
 
-// uso 
+// ejecucion 
 
 const estudiante = new Estudiante ('Jaqueline', 31, '1993-06-20', 'Tecnología'); 
 console.log(estudiante.toString()); 
