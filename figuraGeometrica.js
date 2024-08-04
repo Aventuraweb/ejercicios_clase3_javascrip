@@ -41,3 +41,29 @@ class FiguraGeometrica {
         return this.#color
     }
 }
+
+// Crea subclases como Rectangulo, Circulo, etc., que hereden de FiguraGeometrica y tengan propiedades adicionales como longitud, ancho, radio, etc.
+
+class Rectangulo extends FiguraGeometrica{
+
+    #longitud; 
+    #ancho;
+
+    constructor(nombre, color, longitud, ancho){
+        super(nombre, color); 
+        this.#longitud = longitud; 
+        this.#ancho = ancho; 
+    }   
+      
+}
+
+class Circulo extends FiguraGeometrica {
+
+    #radio; 
+
+    constructor(nombre, color, radio){
+        super(nombre, color); 
+        this.#radio = radio;  
+    }
+
+}
