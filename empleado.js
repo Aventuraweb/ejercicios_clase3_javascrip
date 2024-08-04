@@ -81,3 +81,14 @@ class Gerente extends Empleado {
     }
 
  }
+
+const gerente = new Gerente('Ana Maria', 9000000, 2000000);
+const vendedor = new Vendedor('Catalina', 995724, 470000, 600000); 
+const jefeVentas = new JefeVentas('Paola', 2000000, 3000000, 1500000);
+
+const empleados = [gerente, vendedor, jefeVentas];
+
+empleados.forEach(empleado => {
+    console.log(`Empleado: ${empleado.obtenerNombre()}`);
+    console.log(`Salario: ${empleado.calcularSalario()}`);
+});
