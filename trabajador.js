@@ -41,3 +41,12 @@ const empleados = {
     }
 };
 
+// Ejecución de las tareas
+const estudiante = new Estudiante();
+const empleado = new Empleado();
+
+estudiante.realizarTarea();
+empleado.realizarTarea();
+
+estudiantes.realizarTarea();
+empleados.realizarTarea();
