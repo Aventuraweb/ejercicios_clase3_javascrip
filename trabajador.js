@@ -9,12 +9,21 @@ class Trabajador {
 
 // Implementa la interfaz en las clases Estudiante y Empleado.
 
+
+
 class Estudiante extends Trabajador {
-   
+
+    // En la implementación de realizarTarea() de Estudiante, imprime "Realizando tarea escolar".
+    realizarTarea() {
+        console.log('Realizando tarea escolar');
+    }
 }
 
-
 class Empleado extends Trabajador {
-    
+
+    // En la implementación de realizarTarea() de Empleado, imprime "Realizando tarea laboral".
+    realizarTarea() {
+        console.log('Realizando tarea laboral');
+    }
 }
 
