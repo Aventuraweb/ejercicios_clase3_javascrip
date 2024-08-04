@@ -76,3 +76,4 @@ console.log(persona.obtenerEdad())
 const nuevaFechaNacimiento = persona.calcularFechaNacimiento();
 console.log(nuevaFechaNacimiento);
 
+module.exports = Persona;
