@@ -26,3 +26,20 @@ class Empleado {
     }
 
 }
+
+// Crea subclases como Gerente, Vendedor, etc., que hereden de Empleado
+
+class Gerente extends Empleado {
+
+
+ }
+
+ class Vendedor extends Empleado {
+
+
+ }
+
+ class JefeVentas extends Empleado {
+
+    
+ }
