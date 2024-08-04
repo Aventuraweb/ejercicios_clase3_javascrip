@@ -57,5 +57,14 @@ class Persona {
         return this.#fechaNacimiento
     }
 
+    // Implementa un método adicional calcularFechaNacimiento() que calcule la fecha de nacimiento a partir de la edad.
+    calcularFechaNacimiento(){
+        const dia = new Date(); 
+        const añoNacimiento = dia.getFullYear() - this.#edad;  
+        const fechaNacimiento = new Date(añoNacimiento, dia.getMonth(), dia.getDate()); 
+        this.#fechaNacimiento = fechaNacimiento; 
+        return this.#fechaNacimiento; 
+    }
+
 }
 
